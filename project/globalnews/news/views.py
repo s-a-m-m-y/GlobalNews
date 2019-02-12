@@ -12,3 +12,10 @@ def articles(request):
         'articles': articles,
     }
     return render(request, 'news/articles.html', context)
+# Create your views here.
+def article(request, articleId):
+    article = Article.objects.get(id=articleId)
+    context = {
+        'article': article,
+    }
+    return render(request, 'news/article.html', context)

@@ -6,7 +6,7 @@ from django.contrib.auth.models import User
 from django.utils.timezone import now
 
 class Article(models.Model):
-    sumbitter = models.ForeignKey(User)
+    sumbitter = models.ForeignKey(User,on_delete=models.CASCADE)
     submitted_date = models.DateTimeField(default=now, editable=False)
     title = models.CharField(max_length=200)
     description = models.CharField(max_length=200)
