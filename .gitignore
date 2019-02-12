@@ -2,6 +2,6 @@
 project/GlobalNews.arc/
 .vagrant/
 .DS_Store
-*.pyc
 project/globalnews/db.sqlite3
 project/globalnews/news/migrations/
+*.pyc
